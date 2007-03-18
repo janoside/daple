@@ -1,0 +1,528 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDF0FCE1-6A72-4E5C-B59A-4FAE7D19C3EC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\DapleLogo.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Daple</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Daple</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX">
+      <Name>Microsoft.DirectX</Name>
+      <HintPath>..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v9.00.1126\Microsoft.DirectX.dll</HintPath>
+      <AssemblyFolderKey>hklm\current managed directx 9.1</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D">
+      <Name>Microsoft.DirectX.Direct3D</Name>
+      <HintPath>..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v9.00.1126\Microsoft.DirectX.Direct3D.dll</HintPath>
+      <AssemblyFolderKey>hklm\current managed directx 9.1</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX">
+      <Name>Microsoft.DirectX.Direct3DX</Name>
+      <HintPath>..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v9.00.1126\Microsoft.DirectX.Direct3DX.dll</HintPath>
+      <AssemblyFolderKey>hklm\current managed directx 9.1</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <Name>System.Messaging</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Source\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Animation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\AnimationManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Axis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Axis2d.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Axis3d.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\AxisLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\AxisLabel2d.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\AxisLabel2dCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\AxisLabelCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\AxisOrigin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\CartesianAxis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\CartesianAxisOptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\CartesianPlane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\CartesianSpace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\CodeCounter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\ColorInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\ColorPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\Colors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\ColorSchemePreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\ColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Command.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\CommandLinePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\CommandOption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\CommandOptionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\CommandPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\CommandPanelCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\DrawableCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\DXTimer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\EditAxis2dPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\EditFunction2dColorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\EditFunction2dPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\EditParametric2dPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\EditPolar2dPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\EditPolarAxisPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\Error.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Expression2dColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Expression3dColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\ExpressionAnalysisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\ExpressionAnalysisPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\ExpressionAnalyzer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\ExpressionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\FunctionExtrema2dPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\FunctionParseField.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\FunctionPlotter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\FunctionPlotter3d.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\FunctionPlotterAnimation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Graphics3d.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\GraphPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\GraphPanel2d.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\GraphPanel3d.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\GraphPanelOptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\HorizontalAxis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\HorizontalLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\IDrawable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Interval.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\IPlottable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\IRenderable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Line.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\MainClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Manager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Panel2d.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\ParametricPlotter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\PiCalculator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Plotter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Plotter2d.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Plotter2dEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Plotter2dEditPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\Plotter3d.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Plotter3dEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\PlotterCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\PointCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\PointFCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\PolarAxis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\PolarPlotter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Position2dColorInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Position2dColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Position3dColorInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Position3dColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\RenderableCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Sequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\SequenceStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\SequenceStepCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\SolidColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\StationaryLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\TimeManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\VerticalAxis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\VerticalLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\WorldAxis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\XPosition2dColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\XPosition3dColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\XYPosition2dColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\XYPosition3dColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\YPosition3dColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\ZPosition3dColorSetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\CartesianAxisOptionForm.resx">
+      <DependentUpon>CartesianAxisOptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\ColorPreviewControl.resx">
+      <DependentUpon>ColorPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\ColorSchemePreviewControl.resx">
+      <DependentUpon>ColorSchemePreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\CommandLinePanel.resx">
+      <DependentUpon>CommandLinePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\CommandPanel.resx">
+      <DependentUpon>CommandPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\EditAxis2dPanel.resx">
+      <DependentUpon>EditAxis2dPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\EditFunction2dColorPanel.resx">
+      <DependentUpon>EditFunction2dColorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\EditFunction2dPanel.resx">
+      <DependentUpon>EditFunction2dPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\EditParametric2dPanel.resx">
+      <DependentUpon>EditParametric2dPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\EditPolar2dPanel.resx">
+      <DependentUpon>EditPolar2dPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\EditPolarAxisPanel.resx">
+      <DependentUpon>EditPolarAxisPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\ExpressionAnalysisForm.resx">
+      <DependentUpon>ExpressionAnalysisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\ExpressionAnalysisPanel.resx">
+      <DependentUpon>ExpressionAnalysisPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\ExpressionAnalyzer.resx">
+      <DependentUpon>ExpressionAnalyzer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\FunctionExtrema2dPanel.resx">
+      <DependentUpon>FunctionExtrema2dPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\FunctionParseField.resx">
+      <DependentUpon>FunctionParseField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GraphPanel.resx">
+      <DependentUpon>GraphPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GraphPanel2d.resx">
+      <DependentUpon>GraphPanel2d.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GraphPanel3d.resx">
+      <DependentUpon>GraphPanel3d.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\GraphPanelOptionForm.resx">
+      <DependentUpon>GraphPanelOptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Panel2d.resx">
+      <DependentUpon>Panel2d.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Plotter2dEditForm.resx">
+      <DependentUpon>Plotter2dEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Plotter2dEditPanel.resx">
+      <DependentUpon>Plotter2dEditPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Plotter3dEditForm.resx">
+      <DependentUpon>Plotter3dEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DapleTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DapleLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Daple.SymbolicMath\Daple.SymbolicMath.csproj">
+      <Project>{B8D8A416-2E90-49F4-AFA1-542061547093}</Project>
+      <Name>Daple.SymbolicMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Daple.Utilities\Daple.Utilities.csproj">
+      <Project>{B8FCD7BB-C662-4878-B1AE-F6067BBAA56D}</Project>
+      <Name>Daple.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

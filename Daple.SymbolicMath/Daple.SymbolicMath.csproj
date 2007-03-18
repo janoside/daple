@@ -1,0 +1,97 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8D8A416-2E90-49F4-AFA1-542061547093}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Daple.SymbolicMath</RootNamespace>
+    <AssemblyName>Daple.SymbolicMath</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\AbsoluteValueFunction.cs" />
+    <Compile Include="Source\ConstantFunction.cs" />
+    <Compile Include="Source\CosecantFunction.cs" />
+    <Compile Include="Source\CosineFunction.cs" />
+    <Compile Include="Source\CotangentFunction.cs" />
+    <Compile Include="Source\DoubleFactorialFunction.cs" />
+    <Compile Include="Source\EvaluationPoint.cs" />
+    <Compile Include="Source\Evaluator.cs" />
+    <Compile Include="Source\ExponentialFunction.cs" />
+    <Compile Include="Source\Expression.cs" />
+    <Compile Include="Source\FactorialFunction.cs" />
+    <Compile Include="Source\Function.cs" />
+    <Compile Include="Source\FunctionCollection.cs" />
+    <Compile Include="Source\HeavisideFunction.cs" />
+    <Compile Include="Source\HyperbolicCosecantFunction.cs" />
+    <Compile Include="Source\HyperbolicCosineFunction.cs" />
+    <Compile Include="Source\HyperbolicCotangentFunction.cs" />
+    <Compile Include="Source\HyperbolicSecantFunction.cs" />
+    <Compile Include="Source\HyperbolicSineFunction.cs" />
+    <Compile Include="Source\HyperbolicTangentFunction.cs" />
+    <Compile Include="Source\IEvaluatable.cs" />
+    <Compile Include="Source\InverseCosineFunction.cs" />
+    <Compile Include="Source\InverseHyperbolicCosecantFunction.cs" />
+    <Compile Include="Source\InverseHyperbolicCosineFunction.cs" />
+    <Compile Include="Source\InverseHyperbolicCotangentFunction.cs" />
+    <Compile Include="Source\InverseHyperbolicSecantFunction.cs" />
+    <Compile Include="Source\InverseHyperbolicSineFunction.cs" />
+    <Compile Include="Source\InverseHyperbolicTangentFunction.cs" />
+    <Compile Include="Source\InverseSineFunction.cs" />
+    <Compile Include="Source\InverseTangentFunction.cs" />
+    <Compile Include="Source\IVariableStorer.cs" />
+    <Compile Include="Source\LogarithmFunction.cs" />
+    <Compile Include="Source\MathFunction.cs" />
+    <Compile Include="Source\NaturalLogarithmFunction.cs" />
+    <Compile Include="Source\NullFunction.cs" />
+    <Compile Include="Source\Quotient.cs" />
+    <Compile Include="Source\QuotientCollection.cs" />
+    <Compile Include="Source\SecantFunction.cs" />
+    <Compile Include="Source\SignumFunction.cs" />
+    <Compile Include="Source\SineFunction.cs" />
+    <Compile Include="Source\SquareRootFunction.cs" />
+    <Compile Include="Source\TangentFunction.cs" />
+    <Compile Include="Source\Variable.cs" />
+    <Compile Include="Source\VariableCollection.cs" />
+    <Compile Include="Source\VariableFunction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Daple.Utilities\Daple.Utilities.csproj">
+      <Project>{B8FCD7BB-C662-4878-B1AE-F6067BBAA56D}</Project>
+      <Name>Daple.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
