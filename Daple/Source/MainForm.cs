@@ -30,6 +30,8 @@ namespace Daple {
 		public MainForm() {
 			InitializeComponent();
 
+			this.DoubleBuffered = true;
+
 			this.PostInitialize();
 			this.fExpressionAnalyzer = new ExpressionAnalyzer();
 			this.tabPage4.Controls.Add(this.fExpressionAnalyzer);

@@ -37,6 +37,8 @@ namespace Daple.Plotting.ThreeD {
 			this.fGraphics3d = new Graphics3d(this);
 			this.fCartesianSpace = new CartesianSpace(this.fGraphics3d.pDevice);
 			this.fGraphics3d.Add(this.fCartesianSpace);
+
+			this.DoubleBuffered = true;
 		}
 
 		public Graphics3d pGraphics3d {
@@ -139,11 +141,13 @@ namespace Daple.Plotting.ThreeD {
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
+			this.SuspendLayout();
 			// 
 			// GraphPanel3d
 			// 
 			this.Name = "GraphPanel3d";
-			this.Size = new System.Drawing.Size(384, 328);
+			this.Size = new System.Drawing.Size(546, 501);
+			this.ResumeLayout(false);
 
 		}
 		#endregion

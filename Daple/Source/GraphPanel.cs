@@ -9,7 +9,7 @@ namespace Daple.Plotting {
 	/// <summary>
 	/// Summary description for GraphPanel.
 	/// </summary>
-	public abstract class GraphPanel : System.Windows.Forms.UserControl {
+	public class GraphPanel : System.Windows.Forms.UserControl {
 
 	//	protected GraphPanelOptionForm fOptionForm;
 
@@ -46,11 +46,15 @@ namespace Daple.Plotting {
 		protected override void OnPaint(PaintEventArgs e) {
 			this.Display(e);
 			this.DrawBorder(e.Graphics);
+
+			this.Invalidate();
 		}
 
-		protected abstract void Display(System.Windows.Forms.PaintEventArgs e);
+		protected virtual void Display(System.Windows.Forms.PaintEventArgs e) {
+		}
 
-		protected abstract void ResizeAll(object sender, System.EventArgs e);
+		protected virtual void ResizeAll(object sender, System.EventArgs e) {
+		}
 
 		private void InitializeComponent() {
 			// 

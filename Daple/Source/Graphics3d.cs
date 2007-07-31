@@ -84,6 +84,8 @@ namespace Daple.Plotting.ThreeD {
 			this.fPresentParameters.EnableAutoDepthStencil = true;
 			this.fPresentParameters.Windowed = true;
 			this.fPresentParameters.SwapEffect = D3.SwapEffect.Discard;
+			this.fPresentParameters.PresentationInterval = D3.PresentInterval.Immediate;
+			this.fPresentParameters.MultiSample = D3.MultiSampleType.NonMaskable;
 
 			this.fDevice = new D3.Device(
 				0,
